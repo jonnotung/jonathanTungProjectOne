@@ -201,6 +201,10 @@ article div {
     min-height: 100%;
 }
 
+.articleImage img {
+    display: block;
+}
+
 /* we specialize section specific */
 .weSpecialize .articleText {
     float: right;
@@ -466,7 +470,7 @@ input[type="submit"] {
 
      .weSpecialize .articleText,
      .footCare .articleText {
-        padding: 5%;    
+        padding: 10%;    
      }
 
      .weSpecialize .articleText,
@@ -574,4 +578,14 @@ input[type="submit"] {
     .galleryWrapper img:nth-child(3) {
         display: none;
     }
+
+
+    /* iphone 5 screen size */
+    @media(max-width: 350px) {
+        h1 {
+            font-size: 3.5rem;
+            width: 250px;
+        }
+    }
+
 }
