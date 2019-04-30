@@ -87,7 +87,7 @@ p {
 }
 
 h3 {
-  font-size: 2.1rem;
+    font-size: 2.1rem;
 }
 
 h4 {
@@ -203,7 +203,7 @@ h1 {
 .weSpecialize .articleText,
 .weSpecialize .articleImage,
 .weSpecialize .innerWrapper
- {
+{
     float: right;
 }
 
@@ -217,11 +217,11 @@ h1 {
 .footCare .articleText,
 .footCare .articleImage,
 .footCare .innerWrapper
- {
+{
     float: left;
 }
 
- .footCare .articleText {
+.footCare .articleText {
     padding-right: 20%;
     padding-left: 10%;
 }
@@ -306,83 +306,82 @@ h1 {
 
 /* footer styles */
 footer {
-  background-color: #e3e4ea;
+    background-color: #e3e4ea;
 }
 
 footer .wrapper {
-  /* aligning content along vertical line */
-  padding: 40px 10% 0 10%;
+    /* aligning content along vertical line */
+    padding: 40px 10% 0 10%;
 }
 
 /* footer nav styles */
 footer nav {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 footer ul {
-  max-width: 30%;
-  margin: 0 auto 10px auto;
+    max-width: 30%;
+    margin: 0 auto 10px auto;
 }
 
 footer li {
-  margin: 40px 0;
-  float: left;
-  width: 25%;
+    margin: 40px 0;
+    float: left;
+    width: 25%;
 }
 
 footer nav a {
-  color: #1f2022;
-  font-size: 1rem;
+    color: #1f2022;
+    font-size: 1rem;
 }
 
 footer p {
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 /* footer contact and subscribe sections */
 .contactFooter,
 .subscribeFooter {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
 
 /* subscribe section */
 form {
-  width: 100%;
+    width: 100%;
 }
 input[type="email"] {
-  border: none;
-  width: 70%;
-  float: left;
-  padding: 5px 10px;
-  height: 60px;
+    border: none;
+    width: 70%;
+    float: left;
+    padding: 5px 10px;
+    height: 60px;
 }
 
 input[type="submit"] {
-  width: 30%;
-  float: left;
-  padding: 5px 10px;
-  height: 60px;
-  background-color: #186684;
-  color: white;
-  font-size: 1rem;
-  border: 3px red solid;
+    width: 30%;
+    float: left;
+    padding: 5px 10px;
+    height: 60px;
+    background-color: #186684;
+    color: white;
+    font-size: 1rem;
+    border: 3px red solid;
 }
 
 /* copyright footer styles */
 .copyrightFooter {
-  /* colors */
-  background-color: #1f2022;
-  /* typography */
-  color: darkgrey;
-  /* position */
-  text-align: center;
-  margin-top: 100px;
-  padding: 10px;
-  
+    /* colors */
+    background-color: #1f2022;
+    /* typography */
+    color: darkgrey;
+    /* position */
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px;
 }
 
 /* media queries for responsiveness */
@@ -395,7 +394,7 @@ input[type="submit"] {
     }
 }
 
- @media(max-width: 1140px) {
+@media(max-width: 1140px) {
     /* fix header breaking */
     h1 {
         float: none;
@@ -426,20 +425,20 @@ input[type="submit"] {
     .linkSection ul {
         width: 75%;
     }
- }
+}
 
 /* switch to mobile design */
- @media(max-width: 910px) {
-    
+@media(max-width: 910px) {
+    /* reposition header */
     header {
         background-position: 25% 50%;
     }
 
+    /* hide expanded horizontal nav */
     header ul {
         display: none;
     }
     /* remove social icons in header */
-
     .socialIcons { 
         display: none;
     }
@@ -459,7 +458,7 @@ input[type="submit"] {
         right: 30px;
     }
 
-    /* position header title */
+    /* reposition header title */
     h1 {
         float: right;
         margin: 300px 0 auto auto;
@@ -469,70 +468,70 @@ input[type="submit"] {
         width: 100%;
     }
 
-     .weSpecialize .articleText,
-     .footCare .articleText {
+    .weSpecialize .articleText,
+    .footCare .articleText {
         padding: 10%;    
-     }
+    }
 
-     .weSpecialize .articleText,
-     .weSpecialize .articleImage,
-     .footCare .articleText,
-     .footCare .articleImage {
-         width: 100%;
-         float: none;
-         margin: 0;
-         text-align: center;
-     }
+    .weSpecialize .articleText,
+    .weSpecialize .articleImage,
+    .footCare .articleText,
+    .footCare .articleImage {
+        width: 100%;
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
 
-     .weSpecialize .innerWrapper,
-     .footCare .innerWrapper {
-         float: none;
-         margin: 0 auto;
-     }
+    .weSpecialize .innerWrapper,
+    .footCare .innerWrapper {
+        float: none;
+        margin: 0 auto;
+    }
 
-     .button {
-         margin-top: 15px;
-         display: inline-block;
-     }
-     
+    .button {
+        margin-top: 15px;
+        display: inline-block;
+    }
+    
      /* stack footer sections like in mobile design */
-     footer .wrapper {
-         padding-top: 0;
-     }
+    footer .wrapper {
+        padding-top: 0;
+    }
 
-     footer ul {
-         max-width: 90%;
-         width: 90%;
-         margin: 0;
-     }
+    footer ul {
+        max-width: 90%;
+        width: 90%;
+        margin: 0;
+    }
 
-     footer li {
-         margin: 20px 0 30px 0;
-     }
+    footer li {
+        margin: 20px 0 30px 0;
+    }
 
-     footer h3 {
-         margin-bottom: 20px;
-     }
+    footer h3 {
+        margin-bottom: 20px;
+    }
 
-     footer input[type="email"],
-     footer input[type="submit"] {
-         text-align: center;
-         margin-top: 15px;
-         float: none;
-         width: 100%;
-     }
+    footer input[type="email"],
+    footer input[type="submit"] {
+        text-align: center;
+        margin-top: 15px;
+        float: none;
+        width: 100%;
+    }
 
-     .contactFooter,
+    .contactFooter,
     .subscribeFooter {
         float: none;
         width: 100%;
         text-align: center;
     }
- }
+}
 
- @media(max-width: 780px) {
+@media(max-width: 780px) {
     /* stack giving back section */
-     .givingBackSection div {
+    .givingBackSection div {
         float: none;
         text-align: center;
     }
@@ -557,22 +556,22 @@ input[type="submit"] {
     .linkSection i {  
         margin: 30px 0;
     }
- }
+}
 
- @media(max-width: 600px) {
+@media(max-width: 600px) {
      /* resize header */
     header {
         background-position: 32% 50%;
     }
 
-     h1{
-         font-size: 3.75rem;
-         width: 300px;
-         line-height: 70px;
-     }
+    h1{
+        font-size: 3.75rem;
+        width: 300px;
+        line-height: 70px;
+    }
 
      /* shrink instagram section to 2 pictures */
-     .galleryWrapper img {
+    .galleryWrapper img {
         float: left;
         margin-right: 20px;
         width: calc( (100% / 2) - (20px / 2));
