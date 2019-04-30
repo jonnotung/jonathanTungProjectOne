@@ -169,10 +169,15 @@ article div {
     float: left;
 }
 
+.innerWrapper {
+    max-width: calc( (1600px) / 2);
+    width: 50%;
+}
+
 /*article text section styles */
 .articleText {
     /* sizing */
-    width: 50%;
+    
     /* aligning content along vertical line */
     padding: 10%;
     /* text-align:justify; */
@@ -206,12 +211,14 @@ article div {
 }
 
 .weSpecialize .articleText {
-    padding-right: 5%;
+    padding-left: 20%;
+    padding-right: 10%;
 }
 
 /* foot care section styles */
 .footCare .articleText {
-    padding-left: 5%;
+    padding-right: 20%;
+    padding-left: 10%;
 }
 
 /* giving back section styles */
@@ -453,6 +460,10 @@ input[type="submit"] {
         margin: 300px 0 auto auto;
     }
      /* move to mobile style stacked article sections */
+    .innerWrapper {
+        width: 100%;
+    }
+
      .weSpecialize .articleText,
      .footCare .articleText {
         padding: 5%;    
