@@ -39,7 +39,6 @@ li {
 }
 
 /* common typography styles */
-
 /* colors*/
 body {
      /* set to 20px on default */
@@ -55,6 +54,7 @@ h3 {
 p {
     color: #1f2022;
 }
+
 /* font families */
 a, 
 h1, 
@@ -112,8 +112,8 @@ h4 {
 header {
     background-image: url(assets/headerMedRes.jpg);
     background-size: cover;
-    background-position: center center;
-    height: 800px;   
+    height: 800px;
+    
 }
 
 /* header styles */
@@ -127,14 +127,17 @@ header nav {
 }
 
 header nav li {
+    /* positioning */
     float: left;
     width: 25%;
     padding-top: 25px;
     margin-top: 24px;
+    /* typography */
     font-size: 2.1rem;
 }
 
 h1 {
+    z-index:-2;
     /* position */
     /* float: right; */
     margin: 16% auto auto 42%;
@@ -164,23 +167,9 @@ h1 {
 }
 
 /* common article sections styles */
-
-article div {
-    float: left;
-}
-
 .innerWrapper {
     max-width: calc( (1600px) / 2);
     width: 50%;
-}
-
-/*article text section styles */
-.articleText {
-    /* sizing */
-    
-    /* aligning content along vertical line */
-    padding: 10%;
-    /* text-align:justify; */
 }
 
 .button {
@@ -195,6 +184,11 @@ article div {
     text-transform: uppercase;
 }
 
+.weSpecialize .articleText,
+.footCare .articleText {
+    padding-top: 22.5%; 
+}
+
 /*article image section styles */
 .articleImage {
     width: 50%;
@@ -206,29 +200,33 @@ article div {
 }
 
 /* we specialize section specific */
-.weSpecialize .articleText {
+.weSpecialize .articleText,
+.weSpecialize .articleImage,
+.weSpecialize .innerWrapper
+ {
     float: right;
 }
 
-.weSpecialize .articleImage {
-    float: right;
-}
-
 .weSpecialize .articleText {
-    padding-left: 20%;
+    padding-left: 20%; 
     padding-right: 10%;
 }
 
+
 /* foot care section styles */
-.footCare .articleText {
+.footCare .articleText,
+.footCare .articleImage,
+.footCare .innerWrapper
+ {
+    float: left;
+}
+
+ .footCare .articleText {
     padding-right: 20%;
     padding-left: 10%;
 }
 
 /* giving back section styles */
-/* .givingBackSection.wrapper {
-    max-width: 1440px;
-} */
 /* aligning content along vertical line */
 .givingBackSection {
     background-color: #f4f4f4;
@@ -245,7 +243,6 @@ article div {
 .givingBackText {
     width: calc(79% - 40px);
     margin-left: 40px;
-    /* text-align: justify; */
 }
 
 .givingBackImage {
@@ -406,9 +403,13 @@ input[type="submit"] {
     }
     
      /* fix article section text lining up with images */
-     p {
-        font-size: 0.9rem;
-        line-height: calc(29px * 0.9);
+    h2 {
+        font-size: 2rem;
+    }
+
+    .weSpecialize .articleText,
+    .footCare .articleText {
+        padding-top: 2.5%; 
     }
 
     /* fix giving back section text - image alignment */
@@ -428,7 +429,7 @@ input[type="submit"] {
  }
 
 /* switch to mobile design */
- @media(max-width: 900px) {
+ @media(max-width: 910px) {
     
     header {
         background-position: 25% 50%;
@@ -481,6 +482,12 @@ input[type="submit"] {
          float: none;
          margin: 0;
          text-align: center;
+     }
+
+     .weSpecialize .innerWrapper,
+     .footCare .innerWrapper {
+         float: none;
+         margin: 0 auto;
      }
 
      .button {
