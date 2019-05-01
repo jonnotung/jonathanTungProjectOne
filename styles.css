@@ -79,6 +79,7 @@ h1 {
 
 h2 {
     font-size: 2.1rem;
+    font-weight: normal;
 }
 
 p {
@@ -88,10 +89,15 @@ p {
 
 h3 {
     font-size: 2.1rem;
+    font-weight: normal;
 }
 
 h4 {
     font-size: 2.1rem;
+}
+
+h5 {
+    font-weight: normal;
 }
 
 /* wrapper styles */
@@ -186,13 +192,13 @@ h1 {
 
 .weSpecialize .articleText,
 .footCare .articleText {
-    padding-top: 22.5%; 
+    padding-top: 9vw; 
 }
 
 /*article image section styles */
 .articleImage {
     width: 50%;
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 
 .articleImage img {
@@ -403,12 +409,12 @@ input[type="submit"] {
     
      /* fix article section text lining up with images */
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .weSpecialize .articleText,
     .footCare .articleText {
-        padding-top: 2.5%; 
+        padding-top: 2vw; 
     }
 
     /* fix giving back section text - image alignment */
@@ -461,9 +467,13 @@ input[type="submit"] {
     /* reposition header title */
     h1 {
         float: right;
-        margin: 300px 0 auto auto;
+        margin: 300px 3% auto auto;
     }
      /* move to mobile style stacked article sections */
+     h2 {
+        font-size: 2.1rem;
+    }
+
     .innerWrapper {
         width: 100%;
     }
@@ -481,6 +491,27 @@ input[type="submit"] {
         float: none;
         margin: 0;
         text-align: center;
+    }
+
+    .articleImage {
+        height: 400px;
+    }
+
+    .weSpecialize .articleImage {
+        background-image: url(assets/weSpecializeLowRes.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .footCare .articleImage {
+        background-image: url(assets/footCareLowRes.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .weSpecialize .articleImage img,
+    .footCare .articleImage img {
+        display: none;
     }
 
     .weSpecialize .innerWrapper,
@@ -562,12 +593,18 @@ input[type="submit"] {
      /* resize header */
     header {
         background-position: 32% 50%;
+        height: 600px;
     }
 
     h1{
         font-size: 3.75rem;
         width: 300px;
         line-height: 70px;
+    }
+
+    /* resize 4x4 image section */
+    .articleImage {
+        height: 200px;
     }
 
      /* shrink instagram section to 2 pictures */
@@ -585,13 +622,17 @@ input[type="submit"] {
         display: none;
     }
 
-
-    /* iphone 5 screen size */
-    @media(max-width: 350px) {
-        h1 {
-            font-size: 3.5rem;
-            width: 250px;
-        }
+    /* resize footer fonts */
+    h3 {
+        font-size: 1.25rem;
+        font-weight: normal;
     }
+}
 
+/* iphone 5 screen size */
+@media(max-width: 350px) {
+    h1 {
+        font-size: 3.5rem;
+        width: 250px;
+    }
 }
