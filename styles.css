@@ -173,6 +173,10 @@ h1 {
 }
 
 /* common article sections styles */
+article {
+    height: 400px;
+}
+
 .innerWrapper {
     max-width: calc( (1600px) / 2);
     width: 50%;
@@ -192,17 +196,27 @@ h1 {
 
 .weSpecialize .articleText,
 .footCare .articleText {
-    padding-top: 9vw; 
+    padding-top: 10%; 
+    /* padding-bottom: auto; */
 }
 
 /*article image section styles */
 .articleImage {
     width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+    margin: 0;
     /* min-height: 100%; */
 }
 
-.articleImage img {
-    display: block;
+.weSpecialize .articleImage {
+    background-image: url(assets/weSpecializeLowRes.jpg);
+}
+
+.footCare .articleImage {
+    background-image: url(assets/footCareLowRes.jpg);
 }
 
 /* we specialize section specific */
@@ -414,7 +428,7 @@ input[type="submit"] {
 
     .weSpecialize .articleText,
     .footCare .articleText {
-        padding-top: 2vw; 
+        padding-top: 10%; 
     }
 
     /* fix giving back section text - image alignment */
@@ -474,6 +488,10 @@ input[type="submit"] {
         font-size: 2.1rem;
     }
 
+    article {
+        height: auto;
+    }
+
     .innerWrapper {
         width: 100%;
     }
@@ -494,24 +512,7 @@ input[type="submit"] {
     }
 
     .articleImage {
-        height: 400px;
-    }
-
-    .weSpecialize .articleImage {
-        background-image: url(assets/weSpecializeLowRes.jpg);
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .footCare .articleImage {
-        background-image: url(assets/footCareLowRes.jpg);
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .weSpecialize .articleImage img,
-    .footCare .articleImage img {
-        display: none;
+        height: 300px;
     }
 
     .weSpecialize .innerWrapper,
